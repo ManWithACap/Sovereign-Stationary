@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@font-face{
+    font-family: "Honk2";
+    src: url("./Fonts/Honk/Honk.ttf");
+}
+
 h1 {
     color: white;
-    font-size: 5.0em;
+    letter-spacing: 5px;
+    font-size: 7.0em;
     text-align: center;
+    font-family: "Honk2";
 }
