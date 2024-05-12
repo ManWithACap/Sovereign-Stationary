@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Sovereign Stationary</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Sovereign Stationary</title>
+</head>
 
-    <body style="background-color: green;">
-        <h1 style="position: relative; right: 40px;">Sovereign</h1>
-        <h1 style="text-indent: 2em; position: relative; bottom: 80px;">Stationary</h1>
-    </body>
+<body style="background-color: green;">
+  <h1 style="position: relative; right: 80px;">Sovereign</h1>
+  <h1 style="text-indent: 2em; position: relative; bottom: 80px; right: 40px;">Stationary</h1>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button id="button" type="submit">Login</button>
+    </form>
+    <p id="error" class="error-message"></p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
 
 </html>

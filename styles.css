@@ -1,13 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 @font-face{
-    font-family: "Honk2";
-    src: url("./Fonts/Honk/Honk.ttf");
+	font-family: "Honk2";
+	src: url("./Fonts/Honk/Honk.ttf");
 }
 
 h1 {
-    color: white;
-    letter-spacing: 5px;
-    font-size: 7.0em;
-    text-align: center;
-    font-family: "Honk2";
+	color: white;
+	letter-spacing: 5px;
+	font-size: 7.0em;
+	text-align: center;
+	font-family: "Honk2";
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.container {
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+	max-width: 400px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+h2 {
+	margin-top: 0;
+	text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+.error-message {
+	color: red;
+	text-align: center;
 }
