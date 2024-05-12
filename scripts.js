@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 		});
 
 		if (authenticatedUser) {
-			alert('Login successful!');
+			window.location.href = "./pages/nolan.html";
 		} else {
 			document.getElementById('error').textContent = 'Invalid username or password';
 		}
