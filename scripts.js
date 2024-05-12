@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 		});
 
 		if (authenticatedUser) {
-			window.location.href = "https://manwithacap.github.io/Sovereign-Stationary/pages/" + authenticatedUser.username;
+			window.location.href = /*"https://manwithacap.github.io/Sovereign-Stationary/pages/"*/"https://1dc3eba1-3cc3-49b4-8bf5-e325f8d8338d-00-scc07rt6lmkl.kirk.replit.dev/pages/" + authenticatedUser.username + ".html";
 		} else {
 			document.getElementById('error').textContent = 'Invalid username or password';
 		}
