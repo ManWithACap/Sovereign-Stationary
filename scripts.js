@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 	var password = document.getElementById('password').value;
 
 	try {
-		var response = await fetch('userinfo.json');
+		var response = await fetch('./Data/userinfo.json');
 		if (!response.ok) {
 			throw new Error('Failed to load user data');
 		}
@@ -16,7 +16,6 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 		});
 
 		if (authenticatedUser) {
-			// Redirect to dashboard or do something else on successful login
 			alert('Login successful!');
 		} else {
 			document.getElementById('error').textContent = 'Invalid username or password';
