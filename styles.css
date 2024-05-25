@@ -5,57 +5,117 @@
 	src: url("./Fonts/Honk/Honk.ttf");
 }
 
-h1 {
-	color: white;
-	letter-spacing: 5px;
-	font-size: 12vw;
-	text-align: center;
-	font-family: "Honk2";
-	text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-}
-.container {
-	font-family: Arial, sans-serif;
-	background-color: #fff;
-	max-width: 60%;
-	height: 60%;
-	margin: auto;
-	padding: 2em;
-	border-radius: 1em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+@media(max-width: 1100px){
+	.container {
+		font-family: Arial, sans-serif;
+		background-color: #fff;
+		max-width: 60%;
+		margin: auto;
+		padding: 2em;
+		border-radius: 1em;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	}
+
+	h1 {
+		color: white;
+		letter-spacing: 5px;
+		font-size: 7em;
+		text-align: center;
+		font-family: "Honk2";
+		text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	}
+	
+	h2 {
+		margin-top: 0;
+		text-align: center;
+		font-size: 7vw;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	button {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 3px solid #ccc;
+		border-radius: 3px;
+		box-sizing: border-box;
+		font-size: 3em;
+	}
+
+	button {
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 7vw;
+	}
+
+	button:hover {
+		background-color: #0056b3;
+	}
+
+	.error-message {
+		color: red;
+		text-align: center;
+		font-size: 5vw;
+	}
 }
 
-h2 {
-	margin-top: 0;
-	text-align: center;
-	font-size: 7vw;
-}
+@media(min-width: 1200px){
+	.container {
+		font-family: Arial, sans-serif;
+		background-color: #fff;
+		max-width: 30%;
+		max-height: 40%;
+		margin: auto;
+		padding: 1em;
+		border-radius: 1em;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	}
 
-input[type="text"],
-input[type="password"],
-button {
-	width: 100%;
-	padding: 20px;
-	margin-bottom: 20px;
-	border: 3px solid #ccc;
-	border-radius: 3px;
-	box-sizing: border-box;
-	font-size: 3em;
-}
+	h1 {
+		color: white;
+		letter-spacing: 5px;
+		font-size: 5em;
+		text-align: center;
+		font-family: "Honk2";
+		text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	}
 
-button {
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	font-size: 7vw;
-}
+	h2 {
+		margin-top: 0;
+		text-align: center;
+		font-size: 3vw;
+	}
+	
+	input[type="text"],
+	input[type="password"],
+	button {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 3px solid #ccc;
+		border-radius: 3px;
+		box-sizing: border-box;
+		font-size: 2em;
+	}
 
-button:hover {
-	background-color: #0056b3;
-}
+	button {
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 3vw;
+	}
 
-.error-message {
-	color: red;
-	text-align: center;
-	font-size: 5vw;
+	button:hover {
+		background-color: #0056b3;
+	}
+
+	.error-message {
+		color: red;
+		text-align: center;
+		font-size: 2vw;
+	}
 }
