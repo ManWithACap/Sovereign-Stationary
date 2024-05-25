@@ -1,23 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+	font-family: "Honk2";
+	src: url("../../Fonts/Honk/Honk.ttf");
+}
+
 @media(max-width: 1100px){
-	h1 {
-		font-size: 20vw;
+	#mainContainer{
+		margin-top: 200px;
+		font-size: 3em;
+	}
+	
+	#username{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	#logo, h3{
+		font-size: 3rem;
 		text-align: center;
+		padding-right: 10px;
 	}
 
-	* {
-		font-size: 10vw;
-		text-align: center;
+	#logo{
+		font-family: "Honk2";
+		letter-spacing: 2px;
+	}
+
+	h3{
+		font-family: "Lato";
+	}
+
+	#pfp{
+		width: 4em;
+		height: 4em;
+		border-radius: 2em;
+		margin-left: 10px;
 	}
 }
 
 @media(min-width: 1200px){
-	h1 {
-		font-size: 10vw;
-		text-align: center;
+	#mainContainer{
+		margin-top: 150px;
+	}
+	
+	#username{
+		position: absolute;
+		left: 0;
+		margin-left: 75px;
+	}
+	
+	#logo, h3{
+		font-size: 2rem;
+		padding-right: 10px;
 	}
 
-	* {
-		font-size: 5vw;
-		text-align: center;
+	#logo{
+		font-family: "Honk2";
+		letter-spacing: 2px;
 	}
+
+	h3{
+		font-family: "Lato";
+	}
+	
+	#pfp{
+		width: 3em;
+		height: 3em;
+		border-radius: 2em;
+		margin-left: 10px;
+	}
+}
+
+body {
+	color: white;
+	background-color: #3cae3f;
+}
+
+#logoContainer{
+	top: 0;
+	margin-top: 10px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.75);
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	background-color: #6bd66e;
+}
+
+#pfp{
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+}
+
+#pfp:hover{
+	border: 4px solid black;
+	margin-left: 6px;
+}
+
+#pfp:active{
+	border-color: blue;
 }
