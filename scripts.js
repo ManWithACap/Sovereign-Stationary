@@ -1,5 +1,4 @@
-const dashboardURL = /*"https://manwithacap.github.io/Sovereign-Stationary/pages/dashboard";
-const dashboardURL = */"pages/dashboard.html";
+const dashboardURL = "pages/dashboard.html";
 
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
 	event.preventDefault();
