@@ -1,3 +1,6 @@
+const dashboardURL = /*"https://manwithacap.github.io/Sovereign-Stationary/pages/dashboard";
+const dashboardURL = */"pages/dashboard.html";
+
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
 	event.preventDefault();
 
@@ -17,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
 		if (authenticatedUser) {
 			window.sessionStorage.setItem("username", authenticatedUser.username);
-			window.location.href = "https://manwithacap.github.io/Sovereign-Stationary/pages/dashboard";
+			window.location.href = dashboardURL;
 		} else {
 			document.getElementById('error').textContent = 'Invalid username or password';
 		}
