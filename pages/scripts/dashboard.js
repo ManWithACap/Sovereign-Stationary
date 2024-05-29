@@ -1,5 +1,5 @@
 window.onload = function() {
-	document.getElementById("username").innerHTML = window.localStorage.getItem("username");
+	document.getElementById("username").innerHTML = window.sessionStorage.getItem("username");
 
 	
 }

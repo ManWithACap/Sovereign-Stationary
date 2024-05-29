@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 		});
 
 		if (authenticatedUser) {
-			window.localStorage.setItem("username", authenticatedUser.username);
+			window.sessionStorage.setItem("username", authenticatedUser.username);
 			window.location.href = "https://manwithacap.github.io/Sovereign-Stationary/pages/dashboard";
 		} else {
 			document.getElementById('error').textContent = 'Invalid username or password';
