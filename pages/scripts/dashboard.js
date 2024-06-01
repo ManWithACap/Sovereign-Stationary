@@ -1,5 +1,5 @@
 if (!sessionStorage.getItem("username")) {
-	window.location.href = "../../";
+	window.location.href = localStorage.getItem("loginPage");
 }
 
 window.onload = function() {

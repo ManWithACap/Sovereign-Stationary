@@ -1,5 +1,7 @@
 const dashboardURL = "pages/dashboard.html";
 
+window.localStorage.setItem("loginPage", window.location.href);
+
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
 	event.preventDefault();
 
