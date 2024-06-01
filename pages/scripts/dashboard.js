@@ -1,5 +1,10 @@
 if (!sessionStorage.getItem("username")) {
-	window.location.href = localStorage.getItem("loginPage");
+	if (window.location.href.includes("manwithacap")) {
+		window.location.href = "/Sovereign-Stationary";
+	}
+	else {
+		window.location.href = "/";
+	}
 }
 
 window.onload = function() {

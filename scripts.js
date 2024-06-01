@@ -1,12 +1,5 @@
 const dashboardURL = "pages/dashboard.html";
 
-if (window.location.href.includes("manwithacap")) {
-	window.localStorage.setItem("loginPage", "../../Sovereign-Stationary/");
-}
-else {
-	window.localStorage.setItem("loginPage", window.location.href);
-}
-
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
 	event.preventDefault();
 
