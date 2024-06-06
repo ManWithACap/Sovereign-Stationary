@@ -6,6 +6,11 @@
 	src: url("../../Fonts/Honk/Honk.ttf");
 }
 
+.testImg {
+	height: 200px;
+	width: 250px;
+}
+
 body {
 	color: white;
 	background-color: #3cae3f;
